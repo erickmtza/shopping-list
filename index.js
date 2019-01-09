@@ -19,7 +19,5 @@ $(function addItem() {
                 </li>
             ` ))
 
-        $('ul').append(item);
-
     });
 })
