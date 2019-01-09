@@ -29,3 +29,11 @@ function deleteItem() {
 }
 
 $(deleteItem);
+
+function checkItem() {
+    $('ul').on('click', '.shopping-item-toggle', function(event) {
+        $(this).closest('li').find($('.shopping-item')).toggleClass('shopping-item__checked');
+      });
+}
+
+$(checkItem);
