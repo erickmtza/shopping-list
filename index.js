@@ -23,8 +23,8 @@ $(function addItem() {
 })
 
 function deleteItem() {
-    $('ul').on('click', 'li', function(event) {
-        this.remove();
+    $('ul').on('click', '.shopping-item-delete', function(event) {
+        $(this).parents('li').remove();
       });
 }
 
