@@ -21,3 +21,11 @@ $(function addItem() {
 
     });
 })
+
+function deleteItem() {
+    $('ul').on('click', 'li', function(event) {
+        this.remove();
+      });
+}
+
+$(deleteItem);
